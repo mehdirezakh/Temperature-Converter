@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #CDCDCD; 
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #fuchsia;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+#temperature-input {
+    width: 90%;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.selection-buttons {
+    margin: 20px 0;
+}
+
+.selection-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.selection-buttons button.active {
+    background-color: #fuchsia;
+    color: white;
+}
+
+.selection-buttons button:hover {
+    background-color: #ddd;
+}
+
+.calculate-button {
+    margin: 20px 0;
+}
+
+.calculate-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #038336;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.calculate-button button:hover {
+    background-color: #025c25;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
