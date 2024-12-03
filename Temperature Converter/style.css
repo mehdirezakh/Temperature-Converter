@@ -12,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f9f9f9; /* Very light gray background */
+    background-color: #f9f9f9; 
     font-family: Arial, sans-serif;
 }
 
@@ -71,7 +71,8 @@ h1:hover {
     border-radius: 5px;
     cursor: pointer;
     background-color: #f4f4f4;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
 }
 
 .selection-buttons button.active {
@@ -81,6 +82,13 @@ h1:hover {
 
 .selection-buttons button:hover {
     background-color: #ddd;
+}
+
+
+.selection-buttons button:active {
+    transform: scale(0.95);
+    background-color: #ffd700; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .calculate-button {
@@ -95,11 +103,18 @@ h1:hover {
     cursor: pointer;
     background-color: #038336;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .calculate-button button:hover {
     background-color: #025c25;
+}
+
+
+.calculate-button button:active {
+    transform: scale(0.95);
+    background-color: #ffa500; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .result {
