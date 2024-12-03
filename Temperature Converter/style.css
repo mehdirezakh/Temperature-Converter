@@ -12,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     font-family: Arial, sans-serif;
 }
 
@@ -121,4 +121,5 @@ h1:hover {
     margin-top: 20px;
     font-size: 16px;
     color: #333;
+    line-height: 1.5; 
 }
