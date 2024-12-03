@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #CDCDCD; 
+    background-color: #f9f9f9; /* Very light gray background */
     font-family: Arial, sans-serif;
 }
 
@@ -19,8 +27,17 @@ body {
 }
 
 h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    color: #fuchsia;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
-    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: #038336;
 }
 
 .input-section {
@@ -28,8 +45,8 @@ h1 {
 }
 
 #temperature-input {
-    width: 90%;
-    padding: 16px;
+    width: 100%;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
